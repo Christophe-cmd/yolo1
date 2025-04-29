@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff8fa3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.formulaire {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #ff8fa3;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e06781;
+}

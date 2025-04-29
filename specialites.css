@@ -1,0 +1,71 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* En-tête simple */
+header {
+    background-color: #ff8fa3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Section spécialités */
+.specialites {
+    padding: 40px;
+    background: #fef6f9;
+}
+
+/* Grille responsive */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Bloc image */
+.item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Effet zoom au survol */
+.item:hover img {
+    transform: scale(1.1);
+}
+
+/* Bouton "Commander" */
+.btn-commande {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    background-color: #ff8fa3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+/* Animation bouton sur survol */
+.item:hover .btn-commande {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}

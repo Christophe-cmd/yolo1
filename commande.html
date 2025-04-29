@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander - Marlene Food</title>
+    <link rel="stylesheet" href="commande.css">
+</head>
+<body>
+
+    <header>
+        <h1>Formulaire de Commande</h1>
+    </header>
+
+    <section class="formulaire">
+        <form action="https://formsubmit.co/christophebwango64@gmail.com" method="POST">
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="Nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="Téléphone" required>
+
+            <label for="produit">Produit commandé :</label>
+            <input type="text" id="produit" name="Produit" required>
+
+            <label for="quantite">Quantité :</label>
+            <input type="number" id="quantite" name="Quantité" min="1" required>
+
+            <label for="message">Message supplémentaire :</label>
+            <textarea id="message" name="Message"></textarea>
+
+            <button type="submit">Envoyer la commande</button>
+        </for>
+    </section>
+
+</body>
+</html>
