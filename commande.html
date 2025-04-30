@@ -13,28 +13,29 @@
     </header>
 
     <section class="formulaire">
-        <form action="https://formsubmit.co/christophebwango64@gmail.com" method="POST">
 
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="Nom" required>
+          <form action="https://formsubmit.co/christophebwango64@gmail.com" method="POST">
+  
+  <!-- Champ Nom -->
+  <input type="text" name="Nom" placeholder="Votre nom" required>
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="Email" required>
+  <!-- Champ Téléphone -->
+  <input type="tel" name="Téléphone" placeholder="Votre téléphone" required>
 
-            <label for="telephone">Téléphone :</label>
-            <input type="tel" id="telephone" name="Téléphone" required>
+  <!-- Champ Message / Commande -->
+  <textarea name="Commande" placeholder="Votre commande..." required></textarea>
 
-            <label for="produit">Produit commandé :</label>
-            <input type="text" id="produit" name="Produit" required>
+  <!-- Bouton Envoyer -->
+  <button type="submit">Envoyer la commande</button>
 
-            <label for="quantite">Quantité :</label>
-            <input type="number" id="quantite" name="Quantité" min="1" required>
+  <!-- Protection contre les robots -->
+  <input type="hidden" name="_captcha" value="false">
+  
+  <!-- Page de remerciement après l'envoi -->
+  <input type="hidden" name="_next" value="https://ton-site.com/merci.html">
 
-            <label for="message">Message supplémentaire :</label>
-            <textarea id="message" name="Message"></textarea>
-
-            <button type="submit">Envoyer la commande</button>
-        </for>
+</form>
+ 
     </section>
 
 </body>
